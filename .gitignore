@@ -105,3 +105,9 @@ venv.bak/
 
 runserver.sh
 upload.*
+
+db.sqlite3
+
+.idea/workspace.iml
+
+files/
