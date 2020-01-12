@@ -10,7 +10,7 @@ import os
 def post2json(request):
   concat = request.POST
   postBody = request.body
-  json_result = json.loads(postBody)
+  json_result = json.loads(postBody.decode())
   return json_result
 
   
