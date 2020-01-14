@@ -63,6 +63,10 @@ urlpatterns = [
     url(r'^store-upload/', store_manage.upload_prolist),
     url(r'^store-manage/', store_manage.store_manage),
     url(r'^store-get-detail/', store_manage.get_store_detail),
+    url(r'^auto-paper/', store_manage.auto_paper),
+    url(r'^modify-pro/', store_manage.modify_pro),
+    url(r'^auto-save/', store_manage.auto_save),
+
 
 
     url(r'^echo/', views.httpecho),

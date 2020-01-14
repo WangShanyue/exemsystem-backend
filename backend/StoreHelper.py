@@ -17,7 +17,7 @@ class StoreHelper:
         }
         return obj
 
-    def AddPro(self, list_to_append, problem, ptype, point, right, wrong1, wrong2, wrong3, lastTime):
+    def AddPro(self, list_to_append, problem, ptype, point, right, wrong1, wrong2, wrong3, lastTime,degree):
         list_to_append['problem_count'] += 1
         obj = {
             'id': list_to_append['id_seed'],
@@ -29,11 +29,13 @@ class StoreHelper:
             'wrong3': wrong3,
             'lastTime': lastTime,
             'point': 0,
+            'degree': degree
         }
         list_to_append['question_list'].append(obj)
         list_to_append['id_seed'] += 1
 
     def GetPro(self, list_to_get, id):
+
         questions = list_to_get['question_list']
         checked = False
         ret = questions[0]

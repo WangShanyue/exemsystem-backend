@@ -173,7 +173,9 @@ class PaperHelper:
     def ExtractAnswers(self, test_problem):
         answer_list = []
         problems = test_problem['test_problem']
+
         for problem in problems:
+            print('answers  is  '+str(problem['answer']))
             answer = {
                 'id': problem['id'],
                 'point': problem['point'],
